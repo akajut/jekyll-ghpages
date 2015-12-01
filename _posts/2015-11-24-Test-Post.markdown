@@ -1,7 +1,0 @@
----
-layout: post
-title:  "First Post!"
-date:   2015-11-24 17:59:48
-categories: jekyll update
----
-Testing out Jekyll
