@@ -1,4 +1,9 @@
 _site
 .sass-cache
+<<<<<<< HEAD
 
 *.cfg
+=======
+.DS_Store
+prepros.cfg
+>>>>>>> master
