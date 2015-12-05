@@ -1,0 +1,57 @@
+---
+layout: default
+title: Running
+permalink: /about/interests/running/
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Runs</h1>
+
+
+<table>
+  <tr>
+    <th>Time-Period</th>
+    <th>Count</th>
+    <th>Distance</th>
+    <th>Time</th>
+    <th>Calories</th>
+    <th>Avg-Distance</th>
+    <th>Median-Distance</th>
+    <th>Max-Distance</th>
+    <th>Avg-Time</th>
+    <th>Median-Time</th>
+    <th>Max-Time</th>
+    <th>Avg-Speed</th>
+    <th>Max-Avg-Speed</th>
+    <th>Max-Avg-HR</th>
+    <th>Avg-HR</th>
+    <th>Max-HR</th>
+    <th>Avg-Elevation-Loss</th>
+    <th>Avg-Elevation-Gain</th>
+  </tr>
+{% for run in site.data.run %}
+  <tr>
+    <td>{{ run.Time-Period }}</td>
+    <td>{{ run.Count }}</td>
+    <td>{{ run.Distance }}</td>
+    <td>{{ run.Time }}</td>
+    <td>{{ run.Calories }}</td>
+    <td>{{ run.Avg-Distance }}</td>
+    <td>{{ run.Median-Distance }}</td>
+    <td>{{ run.Max-Distance }}</td>
+    <td>{{ run.Avg-Time }}</td>
+    <td>{{ run.Median-Time }}</td>
+    <td>{{ run.Max-Time }}</td>
+    <td>{{ run.Avg-Speed }}</td>
+    <td>{{ run.Max-Avg-Speed }}</td>
+    <td>{{ run.Max-Avg-HR }}</td>
+    <td>{{ run.Avg-HR }}</td>
+    <td>{{ run.Max-HR }}</td>
+    <td>{{ run.Avg-Elevation-Loss }}</td>
+    <td>{{ run.Avg-Elevation-Gain }}</td>
+  </tr>
+{% endfor %}
+</table>
+
+</div>
