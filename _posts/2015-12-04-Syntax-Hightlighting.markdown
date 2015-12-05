@@ -6,7 +6,7 @@ categories: jekyll
 ---
 Testing out Jekyll Code Highlighting
 
-{% highlight css %} 
+{% highlight js %} 
 
 // Define spreadsheet URL.
 //var mySpreadsheet = 'https://docs.google.com/spreadsheet/ccc?key=0AowHVemz7IvedElrNHVTb2dzZm9TX0x5ckViVWx5bXc#gid=0';
