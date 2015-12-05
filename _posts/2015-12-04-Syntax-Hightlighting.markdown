@@ -16,7 +16,6 @@ var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1dXMZdCVkP9cqw9e6u-Y
 // Load an entire sheet.
 $('#statistics').sheetrock({
   url: mySpreadsheet,
-  query: "select A,B,C,D,E,F,upper(G) ",
   query: "select A,B,D,E,F,G order by F, G",
   labels: ['Trip', 'Start', 'Number of Days', 'Miles', 'St/Pr', 'Area']
 });
