@@ -6,17 +6,15 @@ categories: jekyll
 ---
 Testing out Jekyll Code Highlighting
 
-{% highlight css %} 
+{% highlight js %} 
 
 // Define spreadsheet URL.
-//var mySpreadsheet = 'https://docs.google.com/spreadsheet/ccc?key=0AowHVemz7IvedElrNHVTb2dzZm9TX0x5ckViVWx5bXc#gid=0';
-
-var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1dXMZdCVkP9cqw9e6u-YbhcEy4AsJmuacsUuPOEFOhII#gid=0';
+var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1dXMZdCVkP9cqw9e6u-YbhcEy4AsJmuacsUuPOEFOhII/edit?usp=sharing';
+mySpreadsheet += '#gid=0' // Pulling data from sheet 1
 
 // Load an entire sheet.
-$('#statistics').sheetrock({
+$('#trips').sheetrock({
   url: mySpreadsheet,
-  query: "select A,B,C,D,E,F,upper(G) ",
   query: "select A,B,D,E,F,G order by F, G",
   labels: ['Trip', 'Start', 'Number of Days', 'Miles', 'St/Pr', 'Area']
 });
